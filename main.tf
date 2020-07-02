@@ -10,9 +10,9 @@ resource "aws_ecs_task_definition" "this" {
   # volume
   # placement_constraints
   
-  cpu                      = "32"
-  memory                   = "256"
-  requires_compatibilities = "FARGATE"
+  cpu                      = 256
+  memory                   = 512
+  requires_compatibilities = ["FARGATE"]
   
   # proxy_configuration
   # inference_accelerator 
